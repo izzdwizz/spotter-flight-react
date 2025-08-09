@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Custom styles for react-datepicker to match Google Flights */
+.react-datepicker {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.react-datepicker__header {
+  background-color: white !important;
+  border-bottom: none !important;
+  padding: 0 !important;
+}
+
+.react-datepicker__current-month {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: #1f2937 !important;
+  margin-bottom: 8px !important;
+}
+
+.react-datepicker__day-names {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.react-datepicker__day-name {
+  color: #6b7280 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+  margin: 0 !important;
+}
+
+.react-datepicker__month {
+  margin: 0 !important;
+}
+
+.react-datepicker__week {
+  margin: 0 !important;
+}
+
+.react-datepicker__day {
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+  margin: 0 !important;
+  border-radius: 50% !important;
+  font-size: 14px !important;
+  color: #1f2937 !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: #f3f4f6 !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: #2563eb !important;
+  color: white !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #2563eb !important;
+  color: white !important;
+}
+
+.react-datepicker__day--disabled {
+  color: #d1d5db !important;
+}
+
+.react-datepicker__day--outside-month {
+  color: #d1d5db !important;
+}
+
+.react-datepicker__navigation {
+  top: 8px !important;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #6b7280 !important;
+}
+
+.react-datepicker__navigation:hover .react-datepicker__navigation-icon::before {
+  border-color: #374151 !important;
+}
+
+/* Hide default datepicker popper */
+.react-datepicker-popper {
+  z-index: 9999 !important;
+}
+
+.react-datepicker__input-container input {
+  display: none !important;
+}
